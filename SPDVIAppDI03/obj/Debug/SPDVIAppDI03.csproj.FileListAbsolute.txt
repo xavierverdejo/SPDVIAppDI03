@@ -1,0 +1,15 @@
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\bin\Debug\SPDVIAppDI03.exe.config
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\bin\Debug\SPDVIAppDI03.exe
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\bin\Debug\SPDVIAppDI03.pdb
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\obj\Debug\SPDVIAppDI03.csprojAssemblyReference.cache
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\obj\Debug\SPDVIAppDI03.Properties.Resources.resources
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\obj\Debug\SPDVIAppDI03.csproj.GenerateResource.cache
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\obj\Debug\SPDVIAppDI03.csproj.CoreCompileInputs.cache
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\obj\Debug\SPDVIAppDI03.exe
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\obj\Debug\SPDVIAppDI03.pdb
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\bin\Debug\Dapper.dll
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\bin\Debug\SPDVILibDI03.dll
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\bin\Debug\SPDVILibDI03.pdb
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\bin\Debug\Dapper.xml
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\obj\Debug\SPDVIAppDI03.Form1.resources
+D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVIAppDI03\obj\Debug\SPDVIAppDI03.csproj.CopyComplete
