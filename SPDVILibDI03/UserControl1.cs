@@ -66,7 +66,7 @@ namespace SPDVILibDI03
 
         private void sizeClick(object sender, EventArgs e)
         {
-            MessageBox.Show("Size " + ((Button)sender).Text + " clicked");
+            //MessageBox.Show("Size " + ((Button)sender).Text + " clicked");
             SizeClickedEventArgs args = new SizeClickedEventArgs(Int32.Parse(((Button)sender).Tag.ToString()));
             onSizeClicked(args);
         }

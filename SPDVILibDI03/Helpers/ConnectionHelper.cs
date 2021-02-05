@@ -35,10 +35,15 @@ namespace SPDVILibDI03.Helpers
 
                 foreach (Product product in products)
                 {
-                    if(!fSizes.Any(p => p == product))
+                    bool alreadyExists = false;
+
+                    foreach(Product p in fSizes)
                     {
-                        fSizes.Add(product);
+                        if (p.Size == product.Size)
+                            alreadyExists = true;
                     }
+                    if (!alreadyExists)
+                        fSizes.Add(product);
                 }
                 
             }
