@@ -24,6 +24,27 @@ namespace SPDVILibDI03.Helpers
             }
         }
 
+        public static List<Product> getProductSizes(int id)
+        {
+            List<Product> fSizes = new List<Product>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string sql = $"EXEC uspGetProductSizes {id}";
+                var products = conn.Query<Product>(sql);
+                
+
+                foreach (Product product in products)
+                {
+                    if(!fSizes.Any(p => p == product))
+                    {
+                        fSizes.Add(product);
+                    }
+                }
+                
+            }
+            return fSizes;
+        }
+
         public static int getRandomId()
         {
             int rId = 0;

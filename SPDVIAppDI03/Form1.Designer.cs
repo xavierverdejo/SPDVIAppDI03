@@ -30,31 +30,42 @@ namespace SPDVIAppDI03
         private void InitializeComponent()
         {
             this.userControl11 = new SPDVILibDI03.UserControl1();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // userControl11
             // 
+            this.userControl11.BackColor = System.Drawing.SystemColors.Info;
             this.userControl11.Location = new System.Drawing.Point(12, 12);
             this.userControl11.Name = "userControl11";
             this.userControl11.Size = new System.Drawing.Size(529, 446);
             this.userControl11.TabIndex = 0;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(572, 210);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(161, 20);
+            this.textBox1.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 467);
+            this.ClientSize = new System.Drawing.Size(765, 467);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.userControl11);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private SPDVILibDI03.UserControl1 userControl11;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

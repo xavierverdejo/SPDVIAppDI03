@@ -9,3 +9,14 @@ D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVILibDI03\obj\Debug\SPDVILibD
 D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVILibDI03\obj\Debug\SPDVILibDI03.csproj.CopyComplete
 D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVILibDI03\obj\Debug\SPDVILibDI03.dll
 D:\Cloud\@Home\Classe\VisualStudio\SPDVIAppDI03\SPDVILibDI03\obj\Debug\SPDVILibDI03.pdb
+C:\Users\xavix\Desktop\VisualStudio\SPDVIAppDI03\SPDVILibDI03\bin\Debug\SPDVILibDI03.dll
+C:\Users\xavix\Desktop\VisualStudio\SPDVIAppDI03\SPDVILibDI03\bin\Debug\SPDVILibDI03.pdb
+C:\Users\xavix\Desktop\VisualStudio\SPDVIAppDI03\SPDVILibDI03\bin\Debug\Dapper.dll
+C:\Users\xavix\Desktop\VisualStudio\SPDVIAppDI03\SPDVILibDI03\bin\Debug\Dapper.xml
+C:\Users\xavix\Desktop\VisualStudio\SPDVIAppDI03\SPDVILibDI03\obj\Debug\SPDVILibDI03.csprojAssemblyReference.cache
+C:\Users\xavix\Desktop\VisualStudio\SPDVIAppDI03\SPDVILibDI03\obj\Debug\SPDVILibDI03.UserControl1.resources
+C:\Users\xavix\Desktop\VisualStudio\SPDVIAppDI03\SPDVILibDI03\obj\Debug\SPDVILibDI03.csproj.GenerateResource.cache
+C:\Users\xavix\Desktop\VisualStudio\SPDVIAppDI03\SPDVILibDI03\obj\Debug\SPDVILibDI03.csproj.CoreCompileInputs.cache
+C:\Users\xavix\Desktop\VisualStudio\SPDVIAppDI03\SPDVILibDI03\obj\Debug\SPDVILibDI03.csproj.CopyComplete
+C:\Users\xavix\Desktop\VisualStudio\SPDVIAppDI03\SPDVILibDI03\obj\Debug\SPDVILibDI03.dll
+C:\Users\xavix\Desktop\VisualStudio\SPDVIAppDI03\SPDVILibDI03\obj\Debug\SPDVILibDI03.pdb

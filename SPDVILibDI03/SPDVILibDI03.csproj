@@ -45,7 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Product.cs" />
     <Compile Include="Classes\ProductModel.cs" />
+    <Compile Include="Classes\SizeClickedEventArgs.cs" />
     <Compile Include="Helpers\ConnectionHelper.cs" />
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>

@@ -12,5 +12,6 @@ namespace SPDVILibDI03.Classes
         public string Name { get; set; }
         public byte[] LargePhoto { get; set; }
         public float ListPrice { get; set; }
+        public List<Product> Sizes { get; set; }
     }
 }

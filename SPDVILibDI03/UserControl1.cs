@@ -21,6 +21,13 @@ namespace SPDVILibDI03
             InitializeComponent();
         }
 
+        public event EventHandler<SizeClickedEventArgs> sizeClicked;
+
+        public virtual void onSizeClicked(SizeClickedEventArgs e)
+        {
+            sizeClicked?.Invoke(this, e);
+        }
+
         private void UserControl1_Load(object sender, EventArgs e)
         {
             loadProduct(ConnectionHelper.getRandomId());
@@ -41,6 +48,27 @@ namespace SPDVILibDI03
         private void showSizes(ProductModel pm)
         {
             //EXEC uspGetProductSizes 11
+            List<Product> sizes = ConnectionHelper.getProductSizes(pm.ProductModelID);
+            List<Button> buttons = new List<Button>();
+            flowLayoutPanel1.Controls.Clear();
+            foreach(Product size in sizes)
+            {
+                if (size.Size!= null && !size.Size.Equals(""))
+                {
+                    Button button = new Button();
+                    button.Tag = size.ProductID;
+                    button.Text = size.Size;
+                    button.Click += sizeClick;
+                    flowLayoutPanel1.Controls.Add(button);
+                }
+            }
+        }
+
+        private void sizeClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("Size " + ((Button)sender).Text + " clicked");
+            SizeClickedEventArgs args = new SizeClickedEventArgs(Int32.Parse(((Button)sender).Tag.ToString()));
+            onSizeClicked(args);
         }
 
         private void showImage(ProductModel pm)
@@ -51,7 +79,5 @@ namespace SPDVILibDI03
             
             imageBox.Image = productImage;
         }
-
-
     }
 }

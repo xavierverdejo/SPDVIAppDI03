@@ -30,6 +30,7 @@
         {
             this.imageBox = new System.Windows.Forms.PictureBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,10 +51,19 @@
             this.nameTextBox.Size = new System.Drawing.Size(402, 20);
             this.nameTextBox.TabIndex = 1;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(57, 307);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(402, 122);
+            this.flowLayoutPanel1.TabIndex = 2;
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.imageBox);
             this.Name = "UserControl1";
@@ -69,5 +79,6 @@
 
         private System.Windows.Forms.PictureBox imageBox;
         private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
