@@ -15,11 +15,15 @@ namespace SPDVILibDI03
 {
     public partial class UserControl1 : UserControl
     {
+        #region Variables
         ProductModel pm;
+        #endregion
         public UserControl1()
         {
             InitializeComponent();
         }
+
+        #region EventHandlers
 
         public event EventHandler<SizeClickedEventArgs> sizeClicked;
 
@@ -27,6 +31,15 @@ namespace SPDVILibDI03
         {
             sizeClicked?.Invoke(this, e);
         }
+
+        public event EventHandler<DarkModeChangedEventArgs> darkModeChanged;
+
+        public virtual void onDarkModeChanged(DarkModeChangedEventArgs e)
+        {
+            darkModeChanged?.Invoke(this, e);
+        }
+
+        #endregion
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
@@ -78,6 +91,23 @@ namespace SPDVILibDI03
             Image productImage = Image.FromStream(ms);
             
             imageBox.Image = productImage;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                this.BackColor = Color.FromArgb(64, 64, 64);
+                groupBox1.ForeColor = Color.FromArgb(0, 120, 212);
+            }
+            else
+            {
+                this.BackColor = SystemColors.Menu;
+                groupBox1.ForeColor = Color.Black;
+            }
+
+            DarkModeChangedEventArgs args = new DarkModeChangedEventArgs(checkBox1.Checked);
+            onDarkModeChanged(args);
         }
     }
 }

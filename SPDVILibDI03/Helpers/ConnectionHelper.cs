@@ -32,7 +32,6 @@ namespace SPDVILibDI03.Helpers
                 string sql = $"EXEC uspGetProductSizes {id}";
                 var products = conn.Query<Product>(sql);
                 
-
                 foreach (Product product in products)
                 {
                     bool alreadyExists = false;
@@ -45,7 +44,6 @@ namespace SPDVILibDI03.Helpers
                     if (!alreadyExists)
                         fSizes.Add(product);
                 }
-                
             }
             return fSizes;
         }
