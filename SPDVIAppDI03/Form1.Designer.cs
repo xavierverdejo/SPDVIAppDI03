@@ -31,8 +31,9 @@ namespace SPDVIAppDI03
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.userControl11 = new SPDVILibDI03.UserControl1();
             this.label1 = new System.Windows.Forms.Label();
+            this.userControl11 = new SPDVILibDI03.UserControl1();
+            this.closeButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,23 +46,16 @@ namespace SPDVIAppDI03
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.closeButton);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(553, 9);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 446);
+            this.groupBox1.Size = new System.Drawing.Size(200, 428);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Form 1";
-            // 
-            // userControl11
-            // 
-            this.userControl11.BackColor = System.Drawing.SystemColors.Menu;
-            this.userControl11.Location = new System.Drawing.Point(12, -2);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(529, 446);
-            this.userControl11.TabIndex = 0;
             // 
             // label1
             // 
@@ -72,15 +66,35 @@ namespace SPDVIAppDI03
             this.label1.TabIndex = 2;
             this.label1.Text = "Product ID";
             // 
+            // userControl11
+            // 
+            this.userControl11.BackColor = System.Drawing.SystemColors.Menu;
+            this.userControl11.Location = new System.Drawing.Point(12, -2);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(529, 446);
+            this.userControl11.TabIndex = 0;
+            // 
+            // closeButton
+            // 
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.Location = new System.Drawing.Point(20, 363);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(161, 57);
+            this.closeButton.TabIndex = 3;
+            this.closeButton.Text = "Close";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 467);
+            this.ClientSize = new System.Drawing.Size(765, 441);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.userControl11);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "SPDVI DI03 App";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -94,6 +108,7 @@ namespace SPDVIAppDI03
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button closeButton;
     }
 }
 

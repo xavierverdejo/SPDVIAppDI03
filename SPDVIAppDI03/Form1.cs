@@ -34,18 +34,27 @@ namespace SPDVIAppDI03
                 this.BackColor = Color.FromArgb(64, 64, 64);
                 this.ForeColor = Color.FromArgb(0, 120, 212);
                 groupBox1.ForeColor = Color.FromArgb(0, 120, 212);
+                closeButton.BackColor = Color.FromArgb(0, 120, 212);
+                closeButton.ForeColor = Color.White;
             }
             else
             {
                 this.BackColor = SystemColors.Menu;
                 this.ForeColor = Color.Black;
                 groupBox1.ForeColor = Color.Black;
+                closeButton.BackColor = SystemColors.Control;
+                closeButton.ForeColor = Color.Black;
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
